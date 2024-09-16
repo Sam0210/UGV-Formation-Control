@@ -1,0 +1,21 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/opt/ros/kinetic/include/**",
+        "/usr/include/**",
+        "/home/fu/ugv_formation_control_ws/src/ugv_formation_control/include/ugv_formation_control/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++11"
+    }
+  ],
+  "version": 4
+}

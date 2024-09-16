@@ -1,0 +1,8 @@
+prefix=/home/fu/ugv_formation_control_ws/devel
+
+Name: ugv_formation_control
+Description: Description of ugv_formation_control
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp rospy std_msgs nav_msgs geometry_msgs

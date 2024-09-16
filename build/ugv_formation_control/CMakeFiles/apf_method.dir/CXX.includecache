@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/fu/ugv_formation_control_ws/src/ugv_formation_control/include/ugv_formation_control/apf_method.h
+
+/home/fu/ugv_formation_control_ws/src/ugv_formation_control/src/apf_method.cpp
+apf_method.h
+/home/fu/ugv_formation_control_ws/src/ugv_formation_control/src/apf_method.h
+

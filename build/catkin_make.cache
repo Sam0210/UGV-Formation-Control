@@ -1,0 +1,2 @@
+ugv_formation_config:ugv_formation_control
+-DCATKIN_DEVEL_PREFIX=/home/fu/ugv_formation_control_ws/devel -DCMAKE_INSTALL_PREFIX=/home/fu/ugv_formation_control_ws/install -G Unix Makefiles
