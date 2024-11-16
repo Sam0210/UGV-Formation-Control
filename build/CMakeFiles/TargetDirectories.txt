@@ -62,6 +62,7 @@
 /home/fu/ugv_formation_control_ws/build/ugv_formation_control/CMakeFiles/edit_cache.dir
 /home/fu/ugv_formation_control_ws/build/ugv_formation_control/CMakeFiles/test.dir
 /home/fu/ugv_formation_control_ws/build/ugv_formation_control/CMakeFiles/install/strip.dir
+/home/fu/ugv_formation_control_ws/build/ugv_formation_control/CMakeFiles/controller.dir
 /home/fu/ugv_formation_control_ws/build/ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_py.dir
 /home/fu/ugv_formation_control_ws/build/ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir
 /home/fu/ugv_formation_control_ws/build/ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir
@@ -71,12 +72,13 @@
 /home/fu/ugv_formation_control_ws/build/ugv_formation_control/CMakeFiles/formation_comm.dir
 /home/fu/ugv_formation_control_ws/build/ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_eus.dir
 /home/fu/ugv_formation_control_ws/build/ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_cpp.dir
+/home/fu/ugv_formation_control_ws/build/ugv_formation_control/CMakeFiles/follower.dir
+/home/fu/ugv_formation_control_ws/build/ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir
 /home/fu/ugv_formation_control_ws/build/ugv_formation_control/CMakeFiles/code_debug.dir
 /home/fu/ugv_formation_control_ws/build/ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_nodejs.dir
 /home/fu/ugv_formation_control_ws/build/ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_eus.dir
 /home/fu/ugv_formation_control_ws/build/ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_py.dir
 /home/fu/ugv_formation_control_ws/build/ugv_formation_control/CMakeFiles/install.dir
-/home/fu/ugv_formation_control_ws/build/ugv_formation_control/CMakeFiles/follower_controller.dir
 /home/fu/ugv_formation_control_ws/build/ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_lisp.dir
 /home/fu/ugv_formation_control_ws/build/ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_cpp.dir
 /home/fu/ugv_formation_control_ws/build/ugv_formation_control/CMakeFiles/lf_method.dir
@@ -85,5 +87,4 @@
 /home/fu/ugv_formation_control_ws/build/ugv_formation_control/CMakeFiles/apf_method.dir
 /home/fu/ugv_formation_control_ws/build/ugv_formation_control/CMakeFiles/formation_controller.dir
 /home/fu/ugv_formation_control_ws/build/ugv_formation_control/CMakeFiles/robot.dir
-/home/fu/ugv_formation_control_ws/build/ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir
-/home/fu/ugv_formation_control_ws/build/ugv_formation_control/CMakeFiles/follower.dir
+/home/fu/ugv_formation_control_ws/build/ugv_formation_control/CMakeFiles/leader.dir

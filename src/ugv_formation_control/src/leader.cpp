@@ -1,61 +1,49 @@
 #include "leader.h"
 
-Leader::Leader(ros::NodeHandle& nh, 
-    const TopicName& leader_topics, const std::vector<TopicName>& follower_topics) 
+
+Leader& Leader::get_instance(RobotAttributes& initial_pose, const int& myid)
 {
-    id_ = 0;
-    name_ = "leader";
-
-    heading_ = 0.0;
-    velocity_ << 0.0, 0.0;
-    position_ << 0.0, 0.0, 0.0;
-    target_position_ << 0.0, 0.0, 0.0;
-    desired_velocity_ << 0.0, 0.0;
-
-    health_status_ = NORMAL;
-    formation_config_ = TRIANGLE;
-
-    FormationCOMM& comm = FormationCOMM::get_instance(nh, leader_topics, follower_topics);
+    static Leader instance(initial_pose, myid);
+    return instance;
 }
 
-void Leader::move(const double& v, const double& w) {
-    Eigen::Vector2d vel(v, w);
-    FormationCOMM::get_instance().sendVelInfo(id_, vel);
-    // Implement the movement logic here
+
+Leader::Leader(RobotAttributes& initial_pose, const int& myid) 
+{
+    myid_ = myid;
+    att_ = initial_pose;
+
+    cnter_ = 0;
+    w_fixed_ = M_PI / 6.0;
 }
 
-void Leader::stop() {
-    // Implement the stop logic here
+
+void Leader::sinMove(FormationCOMM& comm, int loop_hz)
+{
+    ++cnter_;
+
+    if (cnter_ == 10*loop_hz) {
+        w_fixed_ = - w_fixed_;
+    }
+    else if (cnter_ == 30*loop_hz) {
+        w_fixed_ = -w_fixed_;
+    }
+    else if (cnter_ == 40*loop_hz) {
+        w_fixed_ = -w_fixed_;
+        cnter_ = 0;
+    }
+
+    move(comm, 0.3, w_fixed_);
 }
 
-// bool Leader::updatePosition(double dt) {
-//     // Implement the position update logic here
-// }
 
-Vector3d Leader::getPosition() const {
-    return position_;
+void Leader::straightMove(FormationCOMM& comm)
+{
+    move(comm, 0.3, 0.0);
 }
 
-Vector2d Leader::getVelocity() const {
-    return velocity_;
-}
 
-HealthStatus Leader::checkHealth() const {
-    return health_status_;
-}
-
-void Leader::updateFormationConfig(const std::string& new_config) {
-    formation_config_ = new_config;
-}
-
-void Leader::broadcastFormationInfo() {
-    // Implement broadcasting logic here
-}
-
-// void Leader::setTargetPoint(Vector3d target) {
-//     target_point_ = target;
-// }
-
-void Leader::setDesiredVelocity(Vector2d velocity) {
-    desired_velocity_ = velocity;
+Leader::~Leader()
+{
+    
 }

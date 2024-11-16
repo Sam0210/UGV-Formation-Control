@@ -134,6 +134,17 @@ void Follower::formatting(FormationCOMM& comm)
     #endif
 
     ControlOutputs outputs = controller.controller(inputs);
+    
+    if(outputs.v > 1.0)
+        outputs.v = 1.0;
+    else if(outputs.v < 0.0)
+        outputs.v = 0.0;
+
+    if (outputs.w > 0.5)
+        outputs.w = 0.5;
+    else if(outputs.w < -0.5)
+        outputs.w = -0.5;
+    
     move(comm, outputs.v, outputs.w);
 }
 

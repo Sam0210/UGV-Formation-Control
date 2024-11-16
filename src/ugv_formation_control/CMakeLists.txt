@@ -148,10 +148,10 @@ add_library(robot
   include/ugv_formation_control/robot.h
   src/robot.cpp
 )
-# add_library(leader
-#   include/ugv_formation_control/leader.h
-#   src/leader.cpp
-# )
+add_library(leader
+  include/ugv_formation_control/leader.h
+  src/leader.cpp
+)
 add_library(follower
   include/ugv_formation_control/follower.h
   src/follower.cpp
@@ -168,13 +168,13 @@ add_dependencies(lf_method             ${${PROJECT_NAME}_EXPORTED_TARGETS} ${cat
 add_dependencies(formation_controller  ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 add_dependencies(code_debug            ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 add_dependencies(robot                 ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-# add_dependencies(leader                ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(leader                ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 add_dependencies(follower              ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-add_executable(follower_controller  src/main.cpp)
+add_executable(controller  src/main.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -184,7 +184,7 @@ add_executable(follower_controller  src/main.cpp)
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
-add_dependencies(follower_controller  ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(controller  ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(formation_comm  ${catkin_LIBRARIES})
@@ -200,16 +200,20 @@ target_link_libraries(robot
   formation_comm
   ${catkin_LIBRARIES}
 )
-# target_link_libraries(leader  ${catkin_LIBRARIES})
+target_link_libraries(leader
+  robot
+  ${catkin_LIBRARIES}
+)
 target_link_libraries(follower
   robot
   formation_controller
   ${catkin_LIBRARIES}
 )
-target_link_libraries(follower_controller
+target_link_libraries(controller
   formation_comm
   formation_controller
   code_debug
+  leader
   follower
   ${catkin_LIBRARIES}
 )

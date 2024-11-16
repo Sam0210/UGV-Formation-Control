@@ -3,11 +3,14 @@
 
 #include "robot.h"
 #include "formation_comm.h"
+#define _USE_MATH_DEFINES 
+#include <cmath>
 
 enum ControlMode {
     POSITION,
     SPEED
 };
+
 
 class Leader : public Robot {
 public:
@@ -15,27 +18,17 @@ public:
     Leader(const Leader&)=delete;
     Leader& operator=(const Leader&)=delete;
 
-    static Leader& get_instance();
+    static Leader& get_instance(RobotAttributes& initial_pose, const int& myid);
 
-    Leader(ros::NodeHandle& nh, 
-        const TopicName& leader_topics, const std::vector<TopicName>& follower_topics);
-
-
-    // bool updatePosition(double dt) override;
-    Vector3d getPosition() const override;
-    Vector2d getVelocity() const override;
-    HealthStatus checkHealth() const override;
-
-    void updateFormationConfig(const std::string& new_config);
-    void broadcastFormationInfo();
-    void setTargetPosition(Vector3d target);
-    void setDesiredVelocity(Vector2d velocity);
+    void sinMove(FormationCOMM& comm, int loop_hz);  // 控制Leader按照正弦形状移动
+    void straightMove(FormationCOMM& comm);
 
 private:
-    int my_id_;
+    int myid_;
+    int cnter_;
+    double w_fixed_;
 
-
-    Leader();
+    Leader(RobotAttributes& initial_pose, const int& myid);
 };
 
 #endif

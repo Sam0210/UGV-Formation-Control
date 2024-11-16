@@ -166,6 +166,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+ugv_formation_control/CMakeFiles/controller.dir/rule:
+	cd /home/fu/ugv_formation_control_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ugv_formation_control/CMakeFiles/controller.dir/rule
+.PHONY : ugv_formation_control/CMakeFiles/controller.dir/rule
+
+# Convenience name for target.
+controller: ugv_formation_control/CMakeFiles/controller.dir/rule
+
+.PHONY : controller
+
+# fast build rule for target.
+controller/fast:
+	cd /home/fu/ugv_formation_control_ws/build && $(MAKE) -f ugv_formation_control/CMakeFiles/controller.dir/build.make ugv_formation_control/CMakeFiles/controller.dir/build
+.PHONY : controller/fast
+
+# Convenience name for target.
 ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
 	cd /home/fu/ugv_formation_control_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
 .PHONY : ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
@@ -286,6 +301,36 @@ geometry_msgs_generate_messages_cpp/fast:
 .PHONY : geometry_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
+ugv_formation_control/CMakeFiles/follower.dir/rule:
+	cd /home/fu/ugv_formation_control_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ugv_formation_control/CMakeFiles/follower.dir/rule
+.PHONY : ugv_formation_control/CMakeFiles/follower.dir/rule
+
+# Convenience name for target.
+follower: ugv_formation_control/CMakeFiles/follower.dir/rule
+
+.PHONY : follower
+
+# fast build rule for target.
+follower/fast:
+	cd /home/fu/ugv_formation_control_ws/build && $(MAKE) -f ugv_formation_control/CMakeFiles/follower.dir/build.make ugv_formation_control/CMakeFiles/follower.dir/build
+.PHONY : follower/fast
+
+# Convenience name for target.
+ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule:
+	cd /home/fu/ugv_formation_control_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
+.PHONY : ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+actionlib_msgs_generate_messages_eus: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
+
+.PHONY : actionlib_msgs_generate_messages_eus
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_eus/fast:
+	cd /home/fu/ugv_formation_control_ws/build && $(MAKE) -f ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build
+.PHONY : actionlib_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
 ugv_formation_control/CMakeFiles/code_debug.dir/rule:
 	cd /home/fu/ugv_formation_control_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ugv_formation_control/CMakeFiles/code_debug.dir/rule
 .PHONY : ugv_formation_control/CMakeFiles/code_debug.dir/rule
@@ -344,21 +389,6 @@ actionlib_msgs_generate_messages_py: ugv_formation_control/CMakeFiles/actionlib_
 actionlib_msgs_generate_messages_py/fast:
 	cd /home/fu/ugv_formation_control_ws/build && $(MAKE) -f ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build
 .PHONY : actionlib_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-ugv_formation_control/CMakeFiles/follower_controller.dir/rule:
-	cd /home/fu/ugv_formation_control_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ugv_formation_control/CMakeFiles/follower_controller.dir/rule
-.PHONY : ugv_formation_control/CMakeFiles/follower_controller.dir/rule
-
-# Convenience name for target.
-follower_controller: ugv_formation_control/CMakeFiles/follower_controller.dir/rule
-
-.PHONY : follower_controller
-
-# fast build rule for target.
-follower_controller/fast:
-	cd /home/fu/ugv_formation_control_ws/build && $(MAKE) -f ugv_formation_control/CMakeFiles/follower_controller.dir/build.make ugv_formation_control/CMakeFiles/follower_controller.dir/build
-.PHONY : follower_controller/fast
 
 # Convenience name for target.
 ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule:
@@ -481,34 +511,19 @@ robot/fast:
 .PHONY : robot/fast
 
 # Convenience name for target.
-ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule:
-	cd /home/fu/ugv_formation_control_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
-.PHONY : ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
+ugv_formation_control/CMakeFiles/leader.dir/rule:
+	cd /home/fu/ugv_formation_control_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ugv_formation_control/CMakeFiles/leader.dir/rule
+.PHONY : ugv_formation_control/CMakeFiles/leader.dir/rule
 
 # Convenience name for target.
-actionlib_msgs_generate_messages_eus: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
+leader: ugv_formation_control/CMakeFiles/leader.dir/rule
 
-.PHONY : actionlib_msgs_generate_messages_eus
+.PHONY : leader
 
 # fast build rule for target.
-actionlib_msgs_generate_messages_eus/fast:
-	cd /home/fu/ugv_formation_control_ws/build && $(MAKE) -f ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build
-.PHONY : actionlib_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-ugv_formation_control/CMakeFiles/follower.dir/rule:
-	cd /home/fu/ugv_formation_control_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ugv_formation_control/CMakeFiles/follower.dir/rule
-.PHONY : ugv_formation_control/CMakeFiles/follower.dir/rule
-
-# Convenience name for target.
-follower: ugv_formation_control/CMakeFiles/follower.dir/rule
-
-.PHONY : follower
-
-# fast build rule for target.
-follower/fast:
-	cd /home/fu/ugv_formation_control_ws/build && $(MAKE) -f ugv_formation_control/CMakeFiles/follower.dir/build.make ugv_formation_control/CMakeFiles/follower.dir/build
-.PHONY : follower/fast
+leader/fast:
+	cd /home/fu/ugv_formation_control_ws/build && $(MAKE) -f ugv_formation_control/CMakeFiles/leader.dir/build.make ugv_formation_control/CMakeFiles/leader.dir/build
+.PHONY : leader/fast
 
 src/apf_method.o: src/apf_method.cpp.o
 
@@ -645,6 +660,33 @@ src/formation_controller.cpp.s:
 	cd /home/fu/ugv_formation_control_ws/build && $(MAKE) -f ugv_formation_control/CMakeFiles/formation_controller.dir/build.make ugv_formation_control/CMakeFiles/formation_controller.dir/src/formation_controller.cpp.s
 .PHONY : src/formation_controller.cpp.s
 
+src/leader.o: src/leader.cpp.o
+
+.PHONY : src/leader.o
+
+# target to build an object file
+src/leader.cpp.o:
+	cd /home/fu/ugv_formation_control_ws/build && $(MAKE) -f ugv_formation_control/CMakeFiles/leader.dir/build.make ugv_formation_control/CMakeFiles/leader.dir/src/leader.cpp.o
+.PHONY : src/leader.cpp.o
+
+src/leader.i: src/leader.cpp.i
+
+.PHONY : src/leader.i
+
+# target to preprocess a source file
+src/leader.cpp.i:
+	cd /home/fu/ugv_formation_control_ws/build && $(MAKE) -f ugv_formation_control/CMakeFiles/leader.dir/build.make ugv_formation_control/CMakeFiles/leader.dir/src/leader.cpp.i
+.PHONY : src/leader.cpp.i
+
+src/leader.s: src/leader.cpp.s
+
+.PHONY : src/leader.s
+
+# target to generate assembly for a file
+src/leader.cpp.s:
+	cd /home/fu/ugv_formation_control_ws/build && $(MAKE) -f ugv_formation_control/CMakeFiles/leader.dir/build.make ugv_formation_control/CMakeFiles/leader.dir/src/leader.cpp.s
+.PHONY : src/leader.cpp.s
+
 src/lf_method.o: src/lf_method.cpp.o
 
 .PHONY : src/lf_method.o
@@ -678,7 +720,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	cd /home/fu/ugv_formation_control_ws/build && $(MAKE) -f ugv_formation_control/CMakeFiles/follower_controller.dir/build.make ugv_formation_control/CMakeFiles/follower_controller.dir/src/main.cpp.o
+	cd /home/fu/ugv_formation_control_ws/build && $(MAKE) -f ugv_formation_control/CMakeFiles/controller.dir/build.make ugv_formation_control/CMakeFiles/controller.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -687,7 +729,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	cd /home/fu/ugv_formation_control_ws/build && $(MAKE) -f ugv_formation_control/CMakeFiles/follower_controller.dir/build.make ugv_formation_control/CMakeFiles/follower_controller.dir/src/main.cpp.i
+	cd /home/fu/ugv_formation_control_ws/build && $(MAKE) -f ugv_formation_control/CMakeFiles/controller.dir/build.make ugv_formation_control/CMakeFiles/controller.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -696,7 +738,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	cd /home/fu/ugv_formation_control_ws/build && $(MAKE) -f ugv_formation_control/CMakeFiles/follower_controller.dir/build.make ugv_formation_control/CMakeFiles/follower_controller.dir/src/main.cpp.s
+	cd /home/fu/ugv_formation_control_ws/build && $(MAKE) -f ugv_formation_control/CMakeFiles/controller.dir/build.make ugv_formation_control/CMakeFiles/controller.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 src/robot.o: src/robot.cpp.o
@@ -737,6 +779,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... test"
 	@echo "... install/strip"
+	@echo "... controller"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... actionlib_msgs_generate_messages_nodejs"
 	@echo "... geometry_msgs_generate_messages_nodejs"
@@ -746,12 +789,13 @@ help:
 	@echo "... formation_comm"
 	@echo "... nav_msgs_generate_messages_eus"
 	@echo "... geometry_msgs_generate_messages_cpp"
+	@echo "... follower"
+	@echo "... actionlib_msgs_generate_messages_eus"
 	@echo "... code_debug"
 	@echo "... nav_msgs_generate_messages_nodejs"
 	@echo "... geometry_msgs_generate_messages_eus"
 	@echo "... actionlib_msgs_generate_messages_py"
 	@echo "... install"
-	@echo "... follower_controller"
 	@echo "... nav_msgs_generate_messages_lisp"
 	@echo "... nav_msgs_generate_messages_cpp"
 	@echo "... lf_method"
@@ -760,8 +804,7 @@ help:
 	@echo "... apf_method"
 	@echo "... formation_controller"
 	@echo "... robot"
-	@echo "... actionlib_msgs_generate_messages_eus"
-	@echo "... follower"
+	@echo "... leader"
 	@echo "... src/apf_method.o"
 	@echo "... src/apf_method.i"
 	@echo "... src/apf_method.s"
@@ -777,6 +820,9 @@ help:
 	@echo "... src/formation_controller.o"
 	@echo "... src/formation_controller.i"
 	@echo "... src/formation_controller.s"
+	@echo "... src/leader.o"
+	@echo "... src/leader.i"
+	@echo "... src/leader.s"
 	@echo "... src/lf_method.o"
 	@echo "... src/lf_method.i"
 	@echo "... src/lf_method.s"

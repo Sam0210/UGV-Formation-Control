@@ -569,6 +569,19 @@ ugv_formation_config_gencfg/fast:
 .PHONY : ugv_formation_config_gencfg/fast
 
 #=============================================================================
+# Target rules for targets named controller
+
+# Build rule for target.
+controller: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 controller
+.PHONY : controller
+
+# fast build rule for target.
+controller/fast:
+	$(MAKE) -f ugv_formation_control/CMakeFiles/controller.dir/build.make ugv_formation_control/CMakeFiles/controller.dir/build
+.PHONY : controller/fast
+
+#=============================================================================
 # Target rules for targets named geometry_msgs_generate_messages_py
 
 # Build rule for target.
@@ -673,6 +686,32 @@ geometry_msgs_generate_messages_cpp/fast:
 .PHONY : geometry_msgs_generate_messages_cpp/fast
 
 #=============================================================================
+# Target rules for targets named follower
+
+# Build rule for target.
+follower: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 follower
+.PHONY : follower
+
+# fast build rule for target.
+follower/fast:
+	$(MAKE) -f ugv_formation_control/CMakeFiles/follower.dir/build.make ugv_formation_control/CMakeFiles/follower.dir/build
+.PHONY : follower/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_msgs_generate_messages_eus
+
+# Build rule for target.
+actionlib_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_eus
+.PHONY : actionlib_msgs_generate_messages_eus
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_eus/fast:
+	$(MAKE) -f ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build
+.PHONY : actionlib_msgs_generate_messages_eus/fast
+
+#=============================================================================
 # Target rules for targets named code_debug
 
 # Build rule for target.
@@ -723,19 +762,6 @@ actionlib_msgs_generate_messages_py: cmake_check_build_system
 actionlib_msgs_generate_messages_py/fast:
 	$(MAKE) -f ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build
 .PHONY : actionlib_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named follower_controller
-
-# Build rule for target.
-follower_controller: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 follower_controller
-.PHONY : follower_controller
-
-# fast build rule for target.
-follower_controller/fast:
-	$(MAKE) -f ugv_formation_control/CMakeFiles/follower_controller.dir/build.make ugv_formation_control/CMakeFiles/follower_controller.dir/build
-.PHONY : follower_controller/fast
 
 #=============================================================================
 # Target rules for targets named nav_msgs_generate_messages_lisp
@@ -842,30 +868,17 @@ robot/fast:
 .PHONY : robot/fast
 
 #=============================================================================
-# Target rules for targets named actionlib_msgs_generate_messages_eus
+# Target rules for targets named leader
 
 # Build rule for target.
-actionlib_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_eus
-.PHONY : actionlib_msgs_generate_messages_eus
+leader: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 leader
+.PHONY : leader
 
 # fast build rule for target.
-actionlib_msgs_generate_messages_eus/fast:
-	$(MAKE) -f ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build
-.PHONY : actionlib_msgs_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named follower
-
-# Build rule for target.
-follower: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 follower
-.PHONY : follower
-
-# fast build rule for target.
-follower/fast:
-	$(MAKE) -f ugv_formation_control/CMakeFiles/follower.dir/build.make ugv_formation_control/CMakeFiles/follower.dir/build
-.PHONY : follower/fast
+leader/fast:
+	$(MAKE) -f ugv_formation_control/CMakeFiles/leader.dir/build.make ugv_formation_control/CMakeFiles/leader.dir/build
+.PHONY : leader/fast
 
 # Help Target
 help:
@@ -911,6 +924,7 @@ help:
 	@echo "... dynamic_reconfigure_generate_messages_py"
 	@echo "... dynamic_reconfigure_gencfg"
 	@echo "... ugv_formation_config_gencfg"
+	@echo "... controller"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... actionlib_msgs_generate_messages_nodejs"
 	@echo "... geometry_msgs_generate_messages_nodejs"
@@ -919,11 +933,12 @@ help:
 	@echo "... formation_comm"
 	@echo "... nav_msgs_generate_messages_eus"
 	@echo "... geometry_msgs_generate_messages_cpp"
+	@echo "... follower"
+	@echo "... actionlib_msgs_generate_messages_eus"
 	@echo "... code_debug"
 	@echo "... nav_msgs_generate_messages_nodejs"
 	@echo "... geometry_msgs_generate_messages_eus"
 	@echo "... actionlib_msgs_generate_messages_py"
-	@echo "... follower_controller"
 	@echo "... nav_msgs_generate_messages_lisp"
 	@echo "... nav_msgs_generate_messages_cpp"
 	@echo "... lf_method"
@@ -932,8 +947,7 @@ help:
 	@echo "... apf_method"
 	@echo "... formation_controller"
 	@echo "... robot"
-	@echo "... actionlib_msgs_generate_messages_eus"
-	@echo "... follower"
+	@echo "... leader"
 .PHONY : help
 
 

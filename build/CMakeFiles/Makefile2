@@ -1104,7 +1104,7 @@ clean: ugv_formation_config/CMakeFiles/dynamic_reconfigure_gencfg.dir/clean
 ugv_formation_config/CMakeFiles/ugv_formation_config_gencfg.dir/all:
 	$(MAKE) -f ugv_formation_config/CMakeFiles/ugv_formation_config_gencfg.dir/build.make ugv_formation_config/CMakeFiles/ugv_formation_config_gencfg.dir/depend
 	$(MAKE) -f ugv_formation_config/CMakeFiles/ugv_formation_config_gencfg.dir/build.make ugv_formation_config/CMakeFiles/ugv_formation_config_gencfg.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fu/ugv_formation_control_ws/build/CMakeFiles --progress-num=28 "Built target ugv_formation_config_gencfg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fu/ugv_formation_control_ws/build/CMakeFiles --progress-num=30 "Built target ugv_formation_config_gencfg"
 .PHONY : ugv_formation_config/CMakeFiles/ugv_formation_config_gencfg.dir/all
 
 # Include target in all.
@@ -1138,18 +1138,20 @@ clean: ugv_formation_config/CMakeFiles/ugv_formation_config_gencfg.dir/clean
 # Directory level rules for directory ugv_formation_control
 
 # Convenience name for "all" pass in the directory.
+ugv_formation_control/all: ugv_formation_control/CMakeFiles/controller.dir/all
 ugv_formation_control/all: ugv_formation_control/CMakeFiles/formation_comm.dir/all
+ugv_formation_control/all: ugv_formation_control/CMakeFiles/follower.dir/all
 ugv_formation_control/all: ugv_formation_control/CMakeFiles/code_debug.dir/all
-ugv_formation_control/all: ugv_formation_control/CMakeFiles/follower_controller.dir/all
 ugv_formation_control/all: ugv_formation_control/CMakeFiles/lf_method.dir/all
 ugv_formation_control/all: ugv_formation_control/CMakeFiles/apf_method.dir/all
 ugv_formation_control/all: ugv_formation_control/CMakeFiles/formation_controller.dir/all
 ugv_formation_control/all: ugv_formation_control/CMakeFiles/robot.dir/all
-ugv_formation_control/all: ugv_formation_control/CMakeFiles/follower.dir/all
+ugv_formation_control/all: ugv_formation_control/CMakeFiles/leader.dir/all
 
 .PHONY : ugv_formation_control/all
 
 # Convenience name for "clean" pass in the directory.
+ugv_formation_control/clean: ugv_formation_control/CMakeFiles/controller.dir/clean
 ugv_formation_control/clean: ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
 ugv_formation_control/clean: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/clean
 ugv_formation_control/clean: ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
@@ -1158,11 +1160,12 @@ ugv_formation_control/clean: ugv_formation_control/CMakeFiles/nav_msgs_generate_
 ugv_formation_control/clean: ugv_formation_control/CMakeFiles/formation_comm.dir/clean
 ugv_formation_control/clean: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_eus.dir/clean
 ugv_formation_control/clean: ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
+ugv_formation_control/clean: ugv_formation_control/CMakeFiles/follower.dir/clean
+ugv_formation_control/clean: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/clean
 ugv_formation_control/clean: ugv_formation_control/CMakeFiles/code_debug.dir/clean
 ugv_formation_control/clean: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/clean
 ugv_formation_control/clean: ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
 ugv_formation_control/clean: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_py.dir/clean
-ugv_formation_control/clean: ugv_formation_control/CMakeFiles/follower_controller.dir/clean
 ugv_formation_control/clean: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_lisp.dir/clean
 ugv_formation_control/clean: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_cpp.dir/clean
 ugv_formation_control/clean: ugv_formation_control/CMakeFiles/lf_method.dir/clean
@@ -1171,8 +1174,7 @@ ugv_formation_control/clean: ugv_formation_control/CMakeFiles/actionlib_msgs_gen
 ugv_formation_control/clean: ugv_formation_control/CMakeFiles/apf_method.dir/clean
 ugv_formation_control/clean: ugv_formation_control/CMakeFiles/formation_controller.dir/clean
 ugv_formation_control/clean: ugv_formation_control/CMakeFiles/robot.dir/clean
-ugv_formation_control/clean: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/clean
-ugv_formation_control/clean: ugv_formation_control/CMakeFiles/follower.dir/clean
+ugv_formation_control/clean: ugv_formation_control/CMakeFiles/leader.dir/clean
 
 .PHONY : ugv_formation_control/clean
 
@@ -1180,6 +1182,80 @@ ugv_formation_control/clean: ugv_formation_control/CMakeFiles/follower.dir/clean
 ugv_formation_control/preinstall:
 
 .PHONY : ugv_formation_control/preinstall
+
+#=============================================================================
+# Target rules for target ugv_formation_control/CMakeFiles/controller.dir
+
+# All Build rule for target.
+ugv_formation_control/CMakeFiles/controller.dir/all: ugv_formation_config/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+ugv_formation_control/CMakeFiles/controller.dir/all: ugv_formation_config/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+ugv_formation_control/CMakeFiles/controller.dir/all: ugv_formation_config/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+ugv_formation_control/CMakeFiles/controller.dir/all: ugv_formation_config/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+ugv_formation_control/CMakeFiles/controller.dir/all: ugv_formation_config/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+ugv_formation_control/CMakeFiles/controller.dir/all: ugv_formation_config/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+ugv_formation_control/CMakeFiles/controller.dir/all: ugv_formation_config/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+ugv_formation_control/CMakeFiles/controller.dir/all: ugv_formation_config/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+ugv_formation_control/CMakeFiles/controller.dir/all: ugv_formation_config/CMakeFiles/std_msgs_generate_messages_py.dir/all
+ugv_formation_control/CMakeFiles/controller.dir/all: ugv_formation_config/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+ugv_formation_control/CMakeFiles/controller.dir/all: ugv_formation_config/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+ugv_formation_control/CMakeFiles/controller.dir/all: ugv_formation_config/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+ugv_formation_control/CMakeFiles/controller.dir/all: ugv_formation_config/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+ugv_formation_control/CMakeFiles/controller.dir/all: ugv_formation_config/CMakeFiles/roscpp_generate_messages_eus.dir/all
+ugv_formation_control/CMakeFiles/controller.dir/all: ugv_formation_config/CMakeFiles/roscpp_generate_messages_py.dir/all
+ugv_formation_control/CMakeFiles/controller.dir/all: ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+ugv_formation_control/CMakeFiles/controller.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
+ugv_formation_control/CMakeFiles/controller.dir/all: ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
+ugv_formation_control/CMakeFiles/controller.dir/all: ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+ugv_formation_control/CMakeFiles/controller.dir/all: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_py.dir/all
+ugv_formation_control/CMakeFiles/controller.dir/all: ugv_formation_control/CMakeFiles/formation_comm.dir/all
+ugv_formation_control/CMakeFiles/controller.dir/all: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_eus.dir/all
+ugv_formation_control/CMakeFiles/controller.dir/all: ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+ugv_formation_control/CMakeFiles/controller.dir/all: ugv_formation_control/CMakeFiles/follower.dir/all
+ugv_formation_control/CMakeFiles/controller.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
+ugv_formation_control/CMakeFiles/controller.dir/all: ugv_formation_control/CMakeFiles/code_debug.dir/all
+ugv_formation_control/CMakeFiles/controller.dir/all: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/all
+ugv_formation_control/CMakeFiles/controller.dir/all: ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
+ugv_formation_control/CMakeFiles/controller.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
+ugv_formation_control/CMakeFiles/controller.dir/all: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_lisp.dir/all
+ugv_formation_control/CMakeFiles/controller.dir/all: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_cpp.dir/all
+ugv_formation_control/CMakeFiles/controller.dir/all: ugv_formation_control/CMakeFiles/lf_method.dir/all
+ugv_formation_control/CMakeFiles/controller.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
+ugv_formation_control/CMakeFiles/controller.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
+ugv_formation_control/CMakeFiles/controller.dir/all: ugv_formation_control/CMakeFiles/apf_method.dir/all
+ugv_formation_control/CMakeFiles/controller.dir/all: ugv_formation_control/CMakeFiles/formation_controller.dir/all
+ugv_formation_control/CMakeFiles/controller.dir/all: ugv_formation_control/CMakeFiles/robot.dir/all
+ugv_formation_control/CMakeFiles/controller.dir/all: ugv_formation_control/CMakeFiles/leader.dir/all
+	$(MAKE) -f ugv_formation_control/CMakeFiles/controller.dir/build.make ugv_formation_control/CMakeFiles/controller.dir/depend
+	$(MAKE) -f ugv_formation_control/CMakeFiles/controller.dir/build.make ugv_formation_control/CMakeFiles/controller.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fu/ugv_formation_control_ws/build/CMakeFiles --progress-num=5,6 "Built target controller"
+.PHONY : ugv_formation_control/CMakeFiles/controller.dir/all
+
+# Include target in all.
+all: ugv_formation_control/CMakeFiles/controller.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+ugv_formation_control/CMakeFiles/controller.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fu/ugv_formation_control_ws/build/CMakeFiles 18
+	$(MAKE) -f CMakeFiles/Makefile2 ugv_formation_control/CMakeFiles/controller.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fu/ugv_formation_control_ws/build/CMakeFiles 0
+.PHONY : ugv_formation_control/CMakeFiles/controller.dir/rule
+
+# Convenience name for target.
+controller: ugv_formation_control/CMakeFiles/controller.dir/rule
+
+.PHONY : controller
+
+# clean rule for target.
+ugv_formation_control/CMakeFiles/controller.dir/clean:
+	$(MAKE) -f ugv_formation_control/CMakeFiles/controller.dir/build.make ugv_formation_control/CMakeFiles/controller.dir/clean
+.PHONY : ugv_formation_control/CMakeFiles/controller.dir/clean
+
+# clean rule for target.
+clean: ugv_formation_control/CMakeFiles/controller.dir/clean
+
+.PHONY : clean
 
 #=============================================================================
 # Target rules for target ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_py.dir
@@ -1367,6 +1443,7 @@ ugv_formation_control/CMakeFiles/formation_comm.dir/all: ugv_formation_control/C
 ugv_formation_control/CMakeFiles/formation_comm.dir/all: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_py.dir/all
 ugv_formation_control/CMakeFiles/formation_comm.dir/all: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_eus.dir/all
 ugv_formation_control/CMakeFiles/formation_comm.dir/all: ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+ugv_formation_control/CMakeFiles/formation_comm.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
 ugv_formation_control/CMakeFiles/formation_comm.dir/all: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/all
 ugv_formation_control/CMakeFiles/formation_comm.dir/all: ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
 ugv_formation_control/CMakeFiles/formation_comm.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
@@ -1374,7 +1451,6 @@ ugv_formation_control/CMakeFiles/formation_comm.dir/all: ugv_formation_control/C
 ugv_formation_control/CMakeFiles/formation_comm.dir/all: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_cpp.dir/all
 ugv_formation_control/CMakeFiles/formation_comm.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
 ugv_formation_control/CMakeFiles/formation_comm.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
-ugv_formation_control/CMakeFiles/formation_comm.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
 	$(MAKE) -f ugv_formation_control/CMakeFiles/formation_comm.dir/build.make ugv_formation_control/CMakeFiles/formation_comm.dir/depend
 	$(MAKE) -f ugv_formation_control/CMakeFiles/formation_comm.dir/build.make ugv_formation_control/CMakeFiles/formation_comm.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fu/ugv_formation_control_ws/build/CMakeFiles --progress-num=9,10 "Built target formation_comm"
@@ -1472,6 +1548,109 @@ clean: ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target ugv_formation_control/CMakeFiles/follower.dir
+
+# All Build rule for target.
+ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_config/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_config/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_config/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_config/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_config/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_config/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_config/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_config/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_config/CMakeFiles/std_msgs_generate_messages_py.dir/all
+ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_config/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_config/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_config/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_config/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_config/CMakeFiles/roscpp_generate_messages_eus.dir/all
+ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_config/CMakeFiles/roscpp_generate_messages_py.dir/all
+ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
+ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
+ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_py.dir/all
+ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_control/CMakeFiles/formation_comm.dir/all
+ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_eus.dir/all
+ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
+ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/all
+ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
+ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
+ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_lisp.dir/all
+ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_cpp.dir/all
+ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_control/CMakeFiles/lf_method.dir/all
+ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
+ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
+ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_control/CMakeFiles/apf_method.dir/all
+ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_control/CMakeFiles/formation_controller.dir/all
+ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_control/CMakeFiles/robot.dir/all
+	$(MAKE) -f ugv_formation_control/CMakeFiles/follower.dir/build.make ugv_formation_control/CMakeFiles/follower.dir/depend
+	$(MAKE) -f ugv_formation_control/CMakeFiles/follower.dir/build.make ugv_formation_control/CMakeFiles/follower.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fu/ugv_formation_control_ws/build/CMakeFiles --progress-num=7,8 "Built target follower"
+.PHONY : ugv_formation_control/CMakeFiles/follower.dir/all
+
+# Include target in all.
+all: ugv_formation_control/CMakeFiles/follower.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+ugv_formation_control/CMakeFiles/follower.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fu/ugv_formation_control_ws/build/CMakeFiles 12
+	$(MAKE) -f CMakeFiles/Makefile2 ugv_formation_control/CMakeFiles/follower.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fu/ugv_formation_control_ws/build/CMakeFiles 0
+.PHONY : ugv_formation_control/CMakeFiles/follower.dir/rule
+
+# Convenience name for target.
+follower: ugv_formation_control/CMakeFiles/follower.dir/rule
+
+.PHONY : follower
+
+# clean rule for target.
+ugv_formation_control/CMakeFiles/follower.dir/clean:
+	$(MAKE) -f ugv_formation_control/CMakeFiles/follower.dir/build.make ugv_formation_control/CMakeFiles/follower.dir/clean
+.PHONY : ugv_formation_control/CMakeFiles/follower.dir/clean
+
+# clean rule for target.
+clean: ugv_formation_control/CMakeFiles/follower.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir
+
+# All Build rule for target.
+ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all:
+	$(MAKE) -f ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fu/ugv_formation_control_ws/build/CMakeFiles --progress-num= "Built target actionlib_msgs_generate_messages_eus"
+.PHONY : ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fu/ugv_formation_control_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fu/ugv_formation_control_ws/build/CMakeFiles 0
+.PHONY : ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+actionlib_msgs_generate_messages_eus: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
+
+.PHONY : actionlib_msgs_generate_messages_eus
+
+# clean rule for target.
+ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/clean
+.PHONY : ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/clean
+
+# clean rule for target.
+clean: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target ugv_formation_control/CMakeFiles/code_debug.dir
 
 # All Build rule for target.
@@ -1497,6 +1676,7 @@ ugv_formation_control/CMakeFiles/code_debug.dir/all: ugv_formation_control/CMake
 ugv_formation_control/CMakeFiles/code_debug.dir/all: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_py.dir/all
 ugv_formation_control/CMakeFiles/code_debug.dir/all: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_eus.dir/all
 ugv_formation_control/CMakeFiles/code_debug.dir/all: ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+ugv_formation_control/CMakeFiles/code_debug.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
 ugv_formation_control/CMakeFiles/code_debug.dir/all: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/all
 ugv_formation_control/CMakeFiles/code_debug.dir/all: ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
 ugv_formation_control/CMakeFiles/code_debug.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
@@ -1504,7 +1684,6 @@ ugv_formation_control/CMakeFiles/code_debug.dir/all: ugv_formation_control/CMake
 ugv_formation_control/CMakeFiles/code_debug.dir/all: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_cpp.dir/all
 ugv_formation_control/CMakeFiles/code_debug.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
 ugv_formation_control/CMakeFiles/code_debug.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
-ugv_formation_control/CMakeFiles/code_debug.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
 	$(MAKE) -f ugv_formation_control/CMakeFiles/code_debug.dir/build.make ugv_formation_control/CMakeFiles/code_debug.dir/depend
 	$(MAKE) -f ugv_formation_control/CMakeFiles/code_debug.dir/build.make ugv_formation_control/CMakeFiles/code_debug.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fu/ugv_formation_control_ws/build/CMakeFiles --progress-num=3,4 "Built target code_debug"
@@ -1634,79 +1813,6 @@ clean: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_py.dir/
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target ugv_formation_control/CMakeFiles/follower_controller.dir
-
-# All Build rule for target.
-ugv_formation_control/CMakeFiles/follower_controller.dir/all: ugv_formation_config/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
-ugv_formation_control/CMakeFiles/follower_controller.dir/all: ugv_formation_config/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
-ugv_formation_control/CMakeFiles/follower_controller.dir/all: ugv_formation_config/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-ugv_formation_control/CMakeFiles/follower_controller.dir/all: ugv_formation_config/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-ugv_formation_control/CMakeFiles/follower_controller.dir/all: ugv_formation_config/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-ugv_formation_control/CMakeFiles/follower_controller.dir/all: ugv_formation_config/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
-ugv_formation_control/CMakeFiles/follower_controller.dir/all: ugv_formation_config/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-ugv_formation_control/CMakeFiles/follower_controller.dir/all: ugv_formation_config/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
-ugv_formation_control/CMakeFiles/follower_controller.dir/all: ugv_formation_config/CMakeFiles/std_msgs_generate_messages_py.dir/all
-ugv_formation_control/CMakeFiles/follower_controller.dir/all: ugv_formation_config/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
-ugv_formation_control/CMakeFiles/follower_controller.dir/all: ugv_formation_config/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-ugv_formation_control/CMakeFiles/follower_controller.dir/all: ugv_formation_config/CMakeFiles/roscpp_generate_messages_lisp.dir/all
-ugv_formation_control/CMakeFiles/follower_controller.dir/all: ugv_formation_config/CMakeFiles/std_msgs_generate_messages_eus.dir/all
-ugv_formation_control/CMakeFiles/follower_controller.dir/all: ugv_formation_config/CMakeFiles/roscpp_generate_messages_eus.dir/all
-ugv_formation_control/CMakeFiles/follower_controller.dir/all: ugv_formation_config/CMakeFiles/roscpp_generate_messages_py.dir/all
-ugv_formation_control/CMakeFiles/follower_controller.dir/all: ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
-ugv_formation_control/CMakeFiles/follower_controller.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
-ugv_formation_control/CMakeFiles/follower_controller.dir/all: ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
-ugv_formation_control/CMakeFiles/follower_controller.dir/all: ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
-ugv_formation_control/CMakeFiles/follower_controller.dir/all: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_py.dir/all
-ugv_formation_control/CMakeFiles/follower_controller.dir/all: ugv_formation_control/CMakeFiles/formation_comm.dir/all
-ugv_formation_control/CMakeFiles/follower_controller.dir/all: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_eus.dir/all
-ugv_formation_control/CMakeFiles/follower_controller.dir/all: ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
-ugv_formation_control/CMakeFiles/follower_controller.dir/all: ugv_formation_control/CMakeFiles/code_debug.dir/all
-ugv_formation_control/CMakeFiles/follower_controller.dir/all: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/all
-ugv_formation_control/CMakeFiles/follower_controller.dir/all: ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
-ugv_formation_control/CMakeFiles/follower_controller.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
-ugv_formation_control/CMakeFiles/follower_controller.dir/all: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_lisp.dir/all
-ugv_formation_control/CMakeFiles/follower_controller.dir/all: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_cpp.dir/all
-ugv_formation_control/CMakeFiles/follower_controller.dir/all: ugv_formation_control/CMakeFiles/lf_method.dir/all
-ugv_formation_control/CMakeFiles/follower_controller.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
-ugv_formation_control/CMakeFiles/follower_controller.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
-ugv_formation_control/CMakeFiles/follower_controller.dir/all: ugv_formation_control/CMakeFiles/apf_method.dir/all
-ugv_formation_control/CMakeFiles/follower_controller.dir/all: ugv_formation_control/CMakeFiles/formation_controller.dir/all
-ugv_formation_control/CMakeFiles/follower_controller.dir/all: ugv_formation_control/CMakeFiles/robot.dir/all
-ugv_formation_control/CMakeFiles/follower_controller.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
-ugv_formation_control/CMakeFiles/follower_controller.dir/all: ugv_formation_control/CMakeFiles/follower.dir/all
-	$(MAKE) -f ugv_formation_control/CMakeFiles/follower_controller.dir/build.make ugv_formation_control/CMakeFiles/follower_controller.dir/depend
-	$(MAKE) -f ugv_formation_control/CMakeFiles/follower_controller.dir/build.make ugv_formation_control/CMakeFiles/follower_controller.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fu/ugv_formation_control_ws/build/CMakeFiles --progress-num=7,8 "Built target follower_controller"
-.PHONY : ugv_formation_control/CMakeFiles/follower_controller.dir/all
-
-# Include target in all.
-all: ugv_formation_control/CMakeFiles/follower_controller.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-ugv_formation_control/CMakeFiles/follower_controller.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fu/ugv_formation_control_ws/build/CMakeFiles 16
-	$(MAKE) -f CMakeFiles/Makefile2 ugv_formation_control/CMakeFiles/follower_controller.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fu/ugv_formation_control_ws/build/CMakeFiles 0
-.PHONY : ugv_formation_control/CMakeFiles/follower_controller.dir/rule
-
-# Convenience name for target.
-follower_controller: ugv_formation_control/CMakeFiles/follower_controller.dir/rule
-
-.PHONY : follower_controller
-
-# clean rule for target.
-ugv_formation_control/CMakeFiles/follower_controller.dir/clean:
-	$(MAKE) -f ugv_formation_control/CMakeFiles/follower_controller.dir/build.make ugv_formation_control/CMakeFiles/follower_controller.dir/clean
-.PHONY : ugv_formation_control/CMakeFiles/follower_controller.dir/clean
-
-# clean rule for target.
-clean: ugv_formation_control/CMakeFiles/follower_controller.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_lisp.dir
 
 # All Build rule for target.
@@ -1796,6 +1902,7 @@ ugv_formation_control/CMakeFiles/lf_method.dir/all: ugv_formation_control/CMakeF
 ugv_formation_control/CMakeFiles/lf_method.dir/all: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_py.dir/all
 ugv_formation_control/CMakeFiles/lf_method.dir/all: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_eus.dir/all
 ugv_formation_control/CMakeFiles/lf_method.dir/all: ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+ugv_formation_control/CMakeFiles/lf_method.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
 ugv_formation_control/CMakeFiles/lf_method.dir/all: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/all
 ugv_formation_control/CMakeFiles/lf_method.dir/all: ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
 ugv_formation_control/CMakeFiles/lf_method.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
@@ -1803,10 +1910,9 @@ ugv_formation_control/CMakeFiles/lf_method.dir/all: ugv_formation_control/CMakeF
 ugv_formation_control/CMakeFiles/lf_method.dir/all: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_cpp.dir/all
 ugv_formation_control/CMakeFiles/lf_method.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
 ugv_formation_control/CMakeFiles/lf_method.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
-ugv_formation_control/CMakeFiles/lf_method.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
 	$(MAKE) -f ugv_formation_control/CMakeFiles/lf_method.dir/build.make ugv_formation_control/CMakeFiles/lf_method.dir/depend
 	$(MAKE) -f ugv_formation_control/CMakeFiles/lf_method.dir/build.make ugv_formation_control/CMakeFiles/lf_method.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fu/ugv_formation_control_ws/build/CMakeFiles --progress-num=24,25 "Built target lf_method"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fu/ugv_formation_control_ws/build/CMakeFiles --progress-num=26,27 "Built target lf_method"
 .PHONY : ugv_formation_control/CMakeFiles/lf_method.dir/all
 
 # Include target in all.
@@ -1926,6 +2032,7 @@ ugv_formation_control/CMakeFiles/apf_method.dir/all: ugv_formation_control/CMake
 ugv_formation_control/CMakeFiles/apf_method.dir/all: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_py.dir/all
 ugv_formation_control/CMakeFiles/apf_method.dir/all: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_eus.dir/all
 ugv_formation_control/CMakeFiles/apf_method.dir/all: ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+ugv_formation_control/CMakeFiles/apf_method.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
 ugv_formation_control/CMakeFiles/apf_method.dir/all: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/all
 ugv_formation_control/CMakeFiles/apf_method.dir/all: ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
 ugv_formation_control/CMakeFiles/apf_method.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
@@ -1933,7 +2040,6 @@ ugv_formation_control/CMakeFiles/apf_method.dir/all: ugv_formation_control/CMake
 ugv_formation_control/CMakeFiles/apf_method.dir/all: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_cpp.dir/all
 ugv_formation_control/CMakeFiles/apf_method.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
 ugv_formation_control/CMakeFiles/apf_method.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
-ugv_formation_control/CMakeFiles/apf_method.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
 	$(MAKE) -f ugv_formation_control/CMakeFiles/apf_method.dir/build.make ugv_formation_control/CMakeFiles/apf_method.dir/depend
 	$(MAKE) -f ugv_formation_control/CMakeFiles/apf_method.dir/build.make ugv_formation_control/CMakeFiles/apf_method.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fu/ugv_formation_control_ws/build/CMakeFiles --progress-num=1,2 "Built target apf_method"
@@ -1992,6 +2098,7 @@ ugv_formation_control/CMakeFiles/formation_controller.dir/all: ugv_formation_con
 ugv_formation_control/CMakeFiles/formation_controller.dir/all: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_py.dir/all
 ugv_formation_control/CMakeFiles/formation_controller.dir/all: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_eus.dir/all
 ugv_formation_control/CMakeFiles/formation_controller.dir/all: ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+ugv_formation_control/CMakeFiles/formation_controller.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
 ugv_formation_control/CMakeFiles/formation_controller.dir/all: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/all
 ugv_formation_control/CMakeFiles/formation_controller.dir/all: ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
 ugv_formation_control/CMakeFiles/formation_controller.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
@@ -2001,7 +2108,6 @@ ugv_formation_control/CMakeFiles/formation_controller.dir/all: ugv_formation_con
 ugv_formation_control/CMakeFiles/formation_controller.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
 ugv_formation_control/CMakeFiles/formation_controller.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
 ugv_formation_control/CMakeFiles/formation_controller.dir/all: ugv_formation_control/CMakeFiles/apf_method.dir/all
-ugv_formation_control/CMakeFiles/formation_controller.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
 	$(MAKE) -f ugv_formation_control/CMakeFiles/formation_controller.dir/build.make ugv_formation_control/CMakeFiles/formation_controller.dir/depend
 	$(MAKE) -f ugv_formation_control/CMakeFiles/formation_controller.dir/build.make ugv_formation_control/CMakeFiles/formation_controller.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fu/ugv_formation_control_ws/build/CMakeFiles --progress-num=11,12 "Built target formation_controller"
@@ -2061,6 +2167,7 @@ ugv_formation_control/CMakeFiles/robot.dir/all: ugv_formation_control/CMakeFiles
 ugv_formation_control/CMakeFiles/robot.dir/all: ugv_formation_control/CMakeFiles/formation_comm.dir/all
 ugv_formation_control/CMakeFiles/robot.dir/all: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_eus.dir/all
 ugv_formation_control/CMakeFiles/robot.dir/all: ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+ugv_formation_control/CMakeFiles/robot.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
 ugv_formation_control/CMakeFiles/robot.dir/all: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/all
 ugv_formation_control/CMakeFiles/robot.dir/all: ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
 ugv_formation_control/CMakeFiles/robot.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
@@ -2068,10 +2175,9 @@ ugv_formation_control/CMakeFiles/robot.dir/all: ugv_formation_control/CMakeFiles
 ugv_formation_control/CMakeFiles/robot.dir/all: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_cpp.dir/all
 ugv_formation_control/CMakeFiles/robot.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
 ugv_formation_control/CMakeFiles/robot.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
-ugv_formation_control/CMakeFiles/robot.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
 	$(MAKE) -f ugv_formation_control/CMakeFiles/robot.dir/build.make ugv_formation_control/CMakeFiles/robot.dir/depend
 	$(MAKE) -f ugv_formation_control/CMakeFiles/robot.dir/build.make ugv_formation_control/CMakeFiles/robot.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fu/ugv_formation_control_ws/build/CMakeFiles --progress-num=26,27 "Built target robot"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fu/ugv_formation_control_ws/build/CMakeFiles --progress-num=28,29 "Built target robot"
 .PHONY : ugv_formation_control/CMakeFiles/robot.dir/all
 
 # Include target in all.
@@ -2102,105 +2208,70 @@ clean: ugv_formation_control/CMakeFiles/robot.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir
+# Target rules for target ugv_formation_control/CMakeFiles/leader.dir
 
 # All Build rule for target.
-ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all:
-	$(MAKE) -f ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/depend
-	$(MAKE) -f ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fu/ugv_formation_control_ws/build/CMakeFiles --progress-num= "Built target actionlib_msgs_generate_messages_eus"
-.PHONY : ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
-
-# Build rule for subdir invocation for target.
-ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fu/ugv_formation_control_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fu/ugv_formation_control_ws/build/CMakeFiles 0
-.PHONY : ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-actionlib_msgs_generate_messages_eus: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
-
-.PHONY : actionlib_msgs_generate_messages_eus
-
-# clean rule for target.
-ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/clean:
-	$(MAKE) -f ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/clean
-.PHONY : ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/clean
-
-# clean rule for target.
-clean: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target ugv_formation_control/CMakeFiles/follower.dir
-
-# All Build rule for target.
-ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_config/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
-ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_config/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
-ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_config/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_config/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_config/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_config/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
-ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_config/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_config/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
-ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_config/CMakeFiles/std_msgs_generate_messages_py.dir/all
-ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_config/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
-ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_config/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_config/CMakeFiles/roscpp_generate_messages_lisp.dir/all
-ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_config/CMakeFiles/std_msgs_generate_messages_eus.dir/all
-ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_config/CMakeFiles/roscpp_generate_messages_eus.dir/all
-ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_config/CMakeFiles/roscpp_generate_messages_py.dir/all
-ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
-ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
-ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
-ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
-ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_py.dir/all
-ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_control/CMakeFiles/formation_comm.dir/all
-ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_eus.dir/all
-ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
-ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/all
-ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
-ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
-ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_lisp.dir/all
-ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_cpp.dir/all
-ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_control/CMakeFiles/lf_method.dir/all
-ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
-ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
-ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_control/CMakeFiles/apf_method.dir/all
-ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_control/CMakeFiles/formation_controller.dir/all
-ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_control/CMakeFiles/robot.dir/all
-ugv_formation_control/CMakeFiles/follower.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
-	$(MAKE) -f ugv_formation_control/CMakeFiles/follower.dir/build.make ugv_formation_control/CMakeFiles/follower.dir/depend
-	$(MAKE) -f ugv_formation_control/CMakeFiles/follower.dir/build.make ugv_formation_control/CMakeFiles/follower.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fu/ugv_formation_control_ws/build/CMakeFiles --progress-num=5,6 "Built target follower"
-.PHONY : ugv_formation_control/CMakeFiles/follower.dir/all
+ugv_formation_control/CMakeFiles/leader.dir/all: ugv_formation_config/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+ugv_formation_control/CMakeFiles/leader.dir/all: ugv_formation_config/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+ugv_formation_control/CMakeFiles/leader.dir/all: ugv_formation_config/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+ugv_formation_control/CMakeFiles/leader.dir/all: ugv_formation_config/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+ugv_formation_control/CMakeFiles/leader.dir/all: ugv_formation_config/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+ugv_formation_control/CMakeFiles/leader.dir/all: ugv_formation_config/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+ugv_formation_control/CMakeFiles/leader.dir/all: ugv_formation_config/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+ugv_formation_control/CMakeFiles/leader.dir/all: ugv_formation_config/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+ugv_formation_control/CMakeFiles/leader.dir/all: ugv_formation_config/CMakeFiles/std_msgs_generate_messages_py.dir/all
+ugv_formation_control/CMakeFiles/leader.dir/all: ugv_formation_config/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+ugv_formation_control/CMakeFiles/leader.dir/all: ugv_formation_config/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+ugv_formation_control/CMakeFiles/leader.dir/all: ugv_formation_config/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+ugv_formation_control/CMakeFiles/leader.dir/all: ugv_formation_config/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+ugv_formation_control/CMakeFiles/leader.dir/all: ugv_formation_config/CMakeFiles/roscpp_generate_messages_eus.dir/all
+ugv_formation_control/CMakeFiles/leader.dir/all: ugv_formation_config/CMakeFiles/roscpp_generate_messages_py.dir/all
+ugv_formation_control/CMakeFiles/leader.dir/all: ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+ugv_formation_control/CMakeFiles/leader.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
+ugv_formation_control/CMakeFiles/leader.dir/all: ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
+ugv_formation_control/CMakeFiles/leader.dir/all: ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+ugv_formation_control/CMakeFiles/leader.dir/all: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_py.dir/all
+ugv_formation_control/CMakeFiles/leader.dir/all: ugv_formation_control/CMakeFiles/formation_comm.dir/all
+ugv_formation_control/CMakeFiles/leader.dir/all: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_eus.dir/all
+ugv_formation_control/CMakeFiles/leader.dir/all: ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+ugv_formation_control/CMakeFiles/leader.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
+ugv_formation_control/CMakeFiles/leader.dir/all: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/all
+ugv_formation_control/CMakeFiles/leader.dir/all: ugv_formation_control/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
+ugv_formation_control/CMakeFiles/leader.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
+ugv_formation_control/CMakeFiles/leader.dir/all: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_lisp.dir/all
+ugv_formation_control/CMakeFiles/leader.dir/all: ugv_formation_control/CMakeFiles/nav_msgs_generate_messages_cpp.dir/all
+ugv_formation_control/CMakeFiles/leader.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
+ugv_formation_control/CMakeFiles/leader.dir/all: ugv_formation_control/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
+ugv_formation_control/CMakeFiles/leader.dir/all: ugv_formation_control/CMakeFiles/robot.dir/all
+	$(MAKE) -f ugv_formation_control/CMakeFiles/leader.dir/build.make ugv_formation_control/CMakeFiles/leader.dir/depend
+	$(MAKE) -f ugv_formation_control/CMakeFiles/leader.dir/build.make ugv_formation_control/CMakeFiles/leader.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fu/ugv_formation_control_ws/build/CMakeFiles --progress-num=24,25 "Built target leader"
+.PHONY : ugv_formation_control/CMakeFiles/leader.dir/all
 
 # Include target in all.
-all: ugv_formation_control/CMakeFiles/follower.dir/all
+all: ugv_formation_control/CMakeFiles/leader.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-ugv_formation_control/CMakeFiles/follower.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fu/ugv_formation_control_ws/build/CMakeFiles 12
-	$(MAKE) -f CMakeFiles/Makefile2 ugv_formation_control/CMakeFiles/follower.dir/all
+ugv_formation_control/CMakeFiles/leader.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fu/ugv_formation_control_ws/build/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 ugv_formation_control/CMakeFiles/leader.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fu/ugv_formation_control_ws/build/CMakeFiles 0
-.PHONY : ugv_formation_control/CMakeFiles/follower.dir/rule
+.PHONY : ugv_formation_control/CMakeFiles/leader.dir/rule
 
 # Convenience name for target.
-follower: ugv_formation_control/CMakeFiles/follower.dir/rule
+leader: ugv_formation_control/CMakeFiles/leader.dir/rule
 
-.PHONY : follower
-
-# clean rule for target.
-ugv_formation_control/CMakeFiles/follower.dir/clean:
-	$(MAKE) -f ugv_formation_control/CMakeFiles/follower.dir/build.make ugv_formation_control/CMakeFiles/follower.dir/clean
-.PHONY : ugv_formation_control/CMakeFiles/follower.dir/clean
+.PHONY : leader
 
 # clean rule for target.
-clean: ugv_formation_control/CMakeFiles/follower.dir/clean
+ugv_formation_control/CMakeFiles/leader.dir/clean:
+	$(MAKE) -f ugv_formation_control/CMakeFiles/leader.dir/build.make ugv_formation_control/CMakeFiles/leader.dir/clean
+.PHONY : ugv_formation_control/CMakeFiles/leader.dir/clean
+
+# clean rule for target.
+clean: ugv_formation_control/CMakeFiles/leader.dir/clean
 
 .PHONY : clean
 

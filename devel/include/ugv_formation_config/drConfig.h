@@ -453,9 +453,9 @@ drConfig::GroupDescription<drConfig::DEFAULT, drConfig> Default("Default", "", 0
 //#line 290 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __default__.list_param = 0;
 //#line 290 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
-      Default.abstract_parameters.push_back(drConfig::AbstractParamDescriptionConstPtr(new drConfig::ParamDescription<int>("list_param", "int", 0, "list", "{'enum_description': 'a car size set', 'enum': [{'srcline': 14, 'description': 'a small size', 'srcfile': '/home/fu/ugv_formation_control_ws/src/ugv_formation_config/cfg/main_config.cfg', 'cconsttype': 'const int', 'value': 0, 'ctype': 'int', 'type': 'int', 'name': 'small'}, {'srcline': 15, 'description': 'a medium size', 'srcfile': '/home/fu/ugv_formation_control_ws/src/ugv_formation_config/cfg/main_config.cfg', 'cconsttype': 'const int', 'value': 1, 'ctype': 'int', 'type': 'int', 'name': 'mediun'}, {'srcline': 16, 'description': 'a big size', 'srcfile': '/home/fu/ugv_formation_control_ws/src/ugv_formation_config/cfg/main_config.cfg', 'cconsttype': 'const int', 'value': 2, 'ctype': 'int', 'type': 'int', 'name': 'big'}]}", &drConfig::list_param)));
+      Default.abstract_parameters.push_back(drConfig::AbstractParamDescriptionConstPtr(new drConfig::ParamDescription<int>("list_param", "int", 0, "list", "{'enum_description': 'a car size set', 'enum': [{'srcline': 13, 'description': 'a small size', 'srcfile': '/home/fu/ugv_formation_control_ws/src/ugv_formation_config/cfg/main_config.cfg', 'cconsttype': 'const int', 'value': 0, 'ctype': 'int', 'type': 'int', 'name': 'small'}, {'srcline': 14, 'description': 'a medium size', 'srcfile': '/home/fu/ugv_formation_control_ws/src/ugv_formation_config/cfg/main_config.cfg', 'cconsttype': 'const int', 'value': 1, 'ctype': 'int', 'type': 'int', 'name': 'mediun'}, {'srcline': 15, 'description': 'a big size', 'srcfile': '/home/fu/ugv_formation_control_ws/src/ugv_formation_config/cfg/main_config.cfg', 'cconsttype': 'const int', 'value': 2, 'ctype': 'int', 'type': 'int', 'name': 'big'}]}", &drConfig::list_param)));
 //#line 290 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
-      __param_descriptions__.push_back(drConfig::AbstractParamDescriptionConstPtr(new drConfig::ParamDescription<int>("list_param", "int", 0, "list", "{'enum_description': 'a car size set', 'enum': [{'srcline': 14, 'description': 'a small size', 'srcfile': '/home/fu/ugv_formation_control_ws/src/ugv_formation_config/cfg/main_config.cfg', 'cconsttype': 'const int', 'value': 0, 'ctype': 'int', 'type': 'int', 'name': 'small'}, {'srcline': 15, 'description': 'a medium size', 'srcfile': '/home/fu/ugv_formation_control_ws/src/ugv_formation_config/cfg/main_config.cfg', 'cconsttype': 'const int', 'value': 1, 'ctype': 'int', 'type': 'int', 'name': 'mediun'}, {'srcline': 16, 'description': 'a big size', 'srcfile': '/home/fu/ugv_formation_control_ws/src/ugv_formation_config/cfg/main_config.cfg', 'cconsttype': 'const int', 'value': 2, 'ctype': 'int', 'type': 'int', 'name': 'big'}]}", &drConfig::list_param)));
+      __param_descriptions__.push_back(drConfig::AbstractParamDescriptionConstPtr(new drConfig::ParamDescription<int>("list_param", "int", 0, "list", "{'enum_description': 'a car size set', 'enum': [{'srcline': 13, 'description': 'a small size', 'srcfile': '/home/fu/ugv_formation_control_ws/src/ugv_formation_config/cfg/main_config.cfg', 'cconsttype': 'const int', 'value': 0, 'ctype': 'int', 'type': 'int', 'name': 'small'}, {'srcline': 14, 'description': 'a medium size', 'srcfile': '/home/fu/ugv_formation_control_ws/src/ugv_formation_config/cfg/main_config.cfg', 'cconsttype': 'const int', 'value': 1, 'ctype': 'int', 'type': 'int', 'name': 'mediun'}, {'srcline': 15, 'description': 'a big size', 'srcfile': '/home/fu/ugv_formation_control_ws/src/ugv_formation_config/cfg/main_config.cfg', 'cconsttype': 'const int', 'value': 2, 'ctype': 'int', 'type': 'int', 'name': 'big'}]}", &drConfig::list_param)));
 //#line 245 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.convertParams();
 //#line 245 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
@@ -535,11 +535,11 @@ drConfig::GroupDescription<drConfig::DEFAULT, drConfig> Default("Default", "", 0
     return statics;
   }
 
-//#line 14 "/home/fu/ugv_formation_control_ws/src/ugv_formation_config/cfg/main_config.cfg"
+//#line 13 "/home/fu/ugv_formation_control_ws/src/ugv_formation_config/cfg/main_config.cfg"
       const int dr_small = 0;
-//#line 15 "/home/fu/ugv_formation_control_ws/src/ugv_formation_config/cfg/main_config.cfg"
+//#line 14 "/home/fu/ugv_formation_control_ws/src/ugv_formation_config/cfg/main_config.cfg"
       const int dr_mediun = 1;
-//#line 16 "/home/fu/ugv_formation_control_ws/src/ugv_formation_config/cfg/main_config.cfg"
+//#line 15 "/home/fu/ugv_formation_control_ws/src/ugv_formation_config/cfg/main_config.cfg"
       const int dr_big = 2;
 }
 
